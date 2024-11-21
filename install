@@ -63,4 +63,16 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/apohorai/xmonad_stack.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
+[apohorai@pohanode1 .gitclones]$ git config credential.helper store
+[apohorai@pohanode1 .gitclones]$ git push
+Username for 'https://github.com': attila.pohorai@gmail.com
+Password for 'https://attila.pohorai@gmail.com@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.23 KiB | 1.23 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/apohorai/xmonad_stack.git
+   fdf8359..e65e551  main -> main
 
