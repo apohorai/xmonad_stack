@@ -1,0 +1,66 @@
+[apohorai@pohanode1 ~]$ mkdir.gitclones
+-bash: mkdir.gitclones: command not found
+[apohorai@pohanode1 ~]$ mkdir .gitclones
+[apohorai@pohanode1 ~]$ cd .gitclones
+[apohorai@pohanode1 .gitclones]$ mkdir xmonad_stack
+[apohorai@pohanode1 .gitclones]$ echo "# xmonad_stack" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/apohorai/xmonad_stack.git
+git push -u origin main
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/apohorai/.gitclones/.git/
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'apohorai@pohanode1.(none)')
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/apohorai/xmonad_stack.git'
+[apohorai@pohanode1 .gitclones]$ ^C
+[apohorai@pohanode1 .gitclones]$ git config --global user.email "attila.pohorai@gmail.com"
+[apohorai@pohanode1 .gitclones]$  git config --global user.name "Attila Pohorai"
+[apohorai@pohanode1 .gitclones]$  git config --global user.name "Your Name"
+^C
+[apohorai@pohanode1 .gitclones]$ git add README.md^C
+[apohorai@pohanode1 .gitclones]$ echo "# xmonad_stack" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/apohorai/xmonad_stack.git
+git push -u origin main
+Reinitialized existing Git repository in /home/apohorai/.gitclones/.git/
+[main (root-commit) fdf8359] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+error: remote origin already exists.
+Username for 'https://github.com': attila.pohorai@gmail.com
+Password for 'https://attila.pohorai@gmail.com@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/apohorai/xmonad_stack.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
